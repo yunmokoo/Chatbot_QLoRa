@@ -1,0 +1,14 @@
+import torch
+from peft import PeftModel    
+from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, StoppingCriteria, StoppingCriteriaList, TextIteratorStreamer
+from transformers import AutoModel
+
+access_token = <access_key>
+
+print('ello world')
+
+model_id = 'meta-llama/Llama-2-7b-hf'
+
+model = AutoModelForCausalLM.from_pretrained(model_id, load_in_4bit=True, device_map='auto', token=access_token)
+tokenizer = AutoTokenizer.from_pretrained(model_id, token=access_token)
+
