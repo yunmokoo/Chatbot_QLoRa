@@ -9,3 +9,7 @@ Fixed and was able to set up the build grounds for 4-bit quantization. Windows 1
 ### 10/1
 Dual boot with linux, was able to fix 'missing cudalibrt.so' problem.
 The model downloaded was 'meta-llama/Llama-2-7b-chat-hf'.
+
+### 10/2
+During the change in dtype for computing, GPU would run into memory problem.
+Clear solution is yet to be found.
