@@ -7,20 +7,20 @@ from transformers import AutoModel
 #clear the GPU memory cache
 #torch.cuda.empty_cache()
 
-device = torch.device("cpu" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
 token = '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'
 
-model_id = 'meta-llama/Llama-2-7b-chat-hf'
+model_id = 'stabilityai/stablelm-3b-4e1t'
 
-model = AutoModelForCausalLM.from_pretrained(model_id, load_in_4bit=True, device_map='auto', token=token)
-tokenizer = AutoTokenizer.from_pretrained(model_id, token=token)
+model = AutoModelForCausalLM.from_pretrained(model_id, load_in_4bit=True, device_map='auto', token=token, trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained(model_id, token=token, trust_remote_code=True)
 
 
 def sample_output(txt):
     text = str(txt)
-    device = "cpu"
+    device = "cuda:0"
 
     inputs = tokenizer(text, return_tensors="pt").to(device)
     outputs = model.generate(**inputs, max_new_tokens=60)
