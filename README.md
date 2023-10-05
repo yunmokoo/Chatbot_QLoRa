@@ -13,3 +13,6 @@ The model downloaded was 'meta-llama/Llama-2-7b-chat-hf'.
 ### 10/2
 During the change in dtype for computing, GPU would run into memory problem.
 Clear solution is yet to be found.
+
+### 10/4
+Changed the model to 'stabilityai/stablelm-3b-4e1t' to reduce the memory requirement. Was able to proceed further into QLoRA inference notebook, but still ran into memory issue later on.
