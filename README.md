@@ -16,3 +16,6 @@ Clear solution is yet to be found.
 
 ### 10/4
 Changed the model to 'stabilityai/stablelm-3b-4e1t' to reduce the memory requirement. Was able to proceed further into QLoRA inference notebook, but still ran into memory issue later on.
+
+### 10/6
+Aproached with simple 4bit training notebook. Both 'stabilityai/stablelm-3b-4e1t' and 'meta-llama/Llama-2-7b-chat-hf' was trained and saved. Also, both were able to generate texts. I am guessing that, since I did not run into memory problem with llama2-7b. The computation change from flost32 to bfloat16 required vram, and the 4bit quantization didn't.
