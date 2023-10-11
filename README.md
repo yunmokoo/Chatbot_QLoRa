@@ -21,3 +21,6 @@ Changed the model to 'stabilityai/stablelm-3b-4e1t' to reduce the memory require
 Aproached with simple 4bit training notebook. Both 'stabilityai/stablelm-3b-4e1t' and 'meta-llama/Llama-2-7b-chat-hf' was trained and saved. Also, both were able to generate texts. I am guessing that, since I did not run into memory problem with llama2-7b. The computation change from flost32 to bfloat16 required vram, and the 4bit quantization didn't.
 
 Attempted to work  with llama-2-13b model, ran out of memory. command line... export PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:80 ...did not help.
+
+### 10/10
+Having chatbot being able to run locally, the implmentation of langchain will come along. Using pincone, language model will access vectorized form of my local data.
