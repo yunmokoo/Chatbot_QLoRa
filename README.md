@@ -33,8 +33,11 @@ https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_q
 following the documentation above will make use of the local llm.
 
 ### 10/16
+looking for a way to avoid using OpenAi api when integrating langchain feature.
+
 https://www.reddit.com/r/LangChain/comments/14edb3s/how_to_use_langchain_with_local_llm/
 
 github example done with Llama.
 
 https://github.com/jlonge4/local_llama
+
