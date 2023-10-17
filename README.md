@@ -31,3 +31,6 @@ Langchain documentation relying on openai makes my local llm pointless.
 https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_qa
 
 following the documentation above will make use of the local llm.
+
+### 10/16
+https://github.com/jlonge4/local_llama
