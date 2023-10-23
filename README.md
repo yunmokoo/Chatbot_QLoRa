@@ -41,3 +41,10 @@ github example done with gpt4all.
 
 https://github.com/jlonge4/local_llama
 
+## 10/22
+Trying to clean a conversation dataset with pyspellchecker.
+
+running into problems...
+
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
