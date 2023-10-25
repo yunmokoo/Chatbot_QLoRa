@@ -10,7 +10,7 @@ from transformers import AutoModel
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")
 
-token = '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'
+token = ''
 
 model_id = 'stabilityai/stablelm-3b-4e1t'
 
