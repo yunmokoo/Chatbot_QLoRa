@@ -37,6 +37,10 @@ looking for a way to avoid using OpenAi api when integrating langchain feature.
 
 https://www.reddit.com/r/LangChain/comments/14edb3s/how_to_use_langchain_with_local_llm/
 
+### 11/10
+
+project cold. Changed to t4b
+
 github example done with gpt4all.
 
 https://github.com/jlonge4/local_llama
